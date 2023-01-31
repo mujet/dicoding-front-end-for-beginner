@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>My Bookshelf App</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>BOOKSHELF APP</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="add-book">
+            <article class="card">
+                <h2>Add New Book</h2>
+                <form action="#" id="formAddBook">
+                    <div>
+                        <label for="inputTitle">Title</label><br>
+                        <input type="text" name="" id="inputTitle" placeholder="ex: To Kill a Mockingbird" required>
+                    </div>
+
+                    <div>
+                        <label for="inputAuthor">Author</label><br>
+                        <input type="text" name="" id="inputAuthor" placeholder="ex: Harper Lee" required>
+                    </div>
+
+                    <div>
+                        <label for="inputYear">Year</label><br>
+                        <input type="number" name="" id="inputYear" placeholder="ex: 1960" required>
+                    </div>
+
+                    <div class="inline">
+                        <label for="inputFinish">Finished Reading</label>
+                        <input type="checkbox" name="" id="inputFinish">
+                    </div>
+
+                    <div class="button">
+                        <button type="submit" name="submit">Add Book</button>
+                    </div>
+            </article>
+            </form>
+        </div>
+
+        <aside>
+            <section class="card">
+                <h2>Search Book</h2>
+                <form action="#" id="formSearchBook">
+                    <input type="text" id="inputSearch" placeholder="Search Book Title" onkeyup="searchBook()">
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>Unfinished Book</h2>
+                <div id="unfinished">
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Finished Book</h2>
+                <div id="finished">
+                </div>
+            </section>
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2022, Krisna Zain Murtafi'</p>
+    </footer>
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
